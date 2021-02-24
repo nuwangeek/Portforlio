@@ -9,10 +9,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "David Rakosi",
-  title: "Hi all, I'm David",
+  username: "Charith Bimsara",
+  title: "Hi all, I'm Charith",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web and Mobile applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of designing and building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.A passionate Volunteer in IEEE and BCS Student Chapters in General Sir John Kotelawala Defence University."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
@@ -22,15 +22,15 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/drakosi99",
+  github: "https://github.com/nuwangeek",
   // linkedin: "https://www.linkedin.com/in/",
-  gmail: "contact@davidrakosi.com",
+  gmail: "charithym321@gmail.com",
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/",
-  medium: "https://medium.com/@davidrakosi",
-  stackoverflow: "https://stackoverflow.com/users/13263979/drakosi",
-  instagram: 'https://www.instagram.com/davidrakosi/',
-  twitter: 'https://twitter.com/davidrakosi_',
+  medium: "https://medium.com/@charithym321",
+  linkedin: "https://www.linkedin.com/in/charith-bimsara-20b72116b/",
+  instagram: 'https://www.instagram.com/bimsara_96/',
+  facebook: 'https://www.facebook.com/profile.php?id=100013404763532',
   display: true // Set true to display this section, defaults to false
 };
 
@@ -100,27 +100,23 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "General Sir John Kotelawala Defence University",
+      logo: require("./assets/images/Kotelawala_Defence_University.png"),
+      subHeader: "Bachelor of Science(Hons) in Computer Science",
+      duration: "September 2018 - Present",
+      //desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Advance Database",
+        "Programming"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc:
-        "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
+    
   ]
 };
 
@@ -151,35 +147,50 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Clever Programmer",
-      companylogo: require("./assets/images/cpLogo.png"),
+      role: "Treasurer",
+      company: "IEEE Student Branch",
+      companylogo: require("./assets/images/IEEElogo.jpg"),
+      date: "January 2020 – Present",
+      desc:
+        "As a student branch of the mother body, IEEE, we are volunteering and being a part of, AdvancingTechnology for Hunamanity "
+      //descBullets: [
+      //  "Custom building applications",
+      //  "Coaching",
+      //  "Streaming live on YouTube",
+      //  "Creating tutorials"
+      //]
+    },
+    {
+      role: "Member,Advisory Panel",
+      company: "BCS Student Chapter",
+      companylogo: require("./assets/images/BCSlogo.jpg"),
+      date: "January 2021 – Present",
+      desc:
+        "As the very first BCS Student Chapter of Sri lanka, we are on a mission to ensure everyone's experience with technology is positive."
+    },
+    {
+      role: "Chairman",
+      company: "Hackfest 2021",
+      companylogo: require("./assets/images/hackfest.jpg"),
+      date: "February 2021 – Present",
+      desc:
+        "Hackfest” is a technology innovation-based inter-university hackathon organized by the IEEE student branch and IEEE WIE Student Branch Affinity Group of Sir John Kotelawala Defence University. "
+    },
+    {
+      role: "2nd Runners Up",
+      company: "Tadhack Global 2020",
+      companylogo: require("./assets/images/tadhack.jpg"),
       date: "September 2020 – Present",
       desc:
-        "Changing lives of developers one line of code at a time.",
-      descBullets: [
-        "Custom building applications",
-        "Coaching",
-        "Streaming live on YouTube",
-        "Creating tutorials"
-      ]
-    },
-    {
-      role: "Product Owner (PSD2)",
-      company: "Erste Bank",
-      companylogo: require("./assets/images/ersteLogo.jpg"),
-      date: "July 2019 – September 2020",
-      desc:
-        "I lead software developers building the API for the bank in order to fulfil the PSD2 regulation requirements."
-    },
-    {
-      role: "Junior Information Security & Systems Representative",
-      company: "Vodafone",
-      companylogo: require("./assets/images/vodafoneLogo.png"),
-      date: "November 2018 – July 2019",
-      desc:
-        "I've conducted internal audit making sure the organization is compliant with the GDPR."
+        "We were able to secure 2nd runner-up in TADHack ANZ international Hackathon that organized by hSenid Software International Software and ideamart.io for Srilanka."
+      //descBullets: [
+      //  "Custom building applications",
+      //  "Coaching",
+      //  "Streaming live on YouTube",
+      //  "Creating tutorials"
+      //]
     }
+    
   ]
 };
 
@@ -188,9 +199,9 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "drakosi99", // Change to your github username to view your profile in Contact Section.
+  githubUserName: "nuwangeek", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -310,7 +321,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -349,15 +360,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "(323) 768 0674",
-  email_address: "contact@davidrakosi.com"
+  number: "(+94) 771966684",
+  email_address: "charithym321@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "davidrakosi_", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
